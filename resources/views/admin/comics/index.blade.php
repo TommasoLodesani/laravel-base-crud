@@ -1,17 +1,37 @@
-@extends('admin.template.base');
+@extends('admin.template.base')
 
 @section('mainContent')
     <main>
-        <ul>
+
 
         @foreach ($comics as $comic)
-        <li>
-            {{$comic->title}}
-        </li>
+        <div>
+            <h4>
+                ID: {{$comic->id}}
+
+            </h4>
+            <h4>
+                Titolo :{{$comic->title}}
+
+            </h4>
+            <h4>
+                Descrizione:{{$comic->description}}
+
+            </h4>
+        </div>
+
+
+
+
+
+
+
+
+
 
         @endforeach
 
-        </ul>
+        <
     </main>
 
 @endsection
