@@ -21,6 +21,7 @@ class CreateComicsTable extends Migration
             $table->integer('price');
             $table->string('series',50);
             $table->string('type',50);
+            $table->string('type',50);
 
         });
     }

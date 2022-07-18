@@ -17,19 +17,19 @@ class ComicsController extends Controller
 
     public function create()
     {
-        //
+        return view('admin.comics.create');
     }
 
 
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
 
-    public function show($id)
+    public function show(Comic $comic)
     {
-      $comic = Comic::find($id);
+
       return view('admin.comics.show', compact('comic'));
     }
 
