@@ -23,7 +23,12 @@ class ComicsController extends Controller
 
     public function store(Request $request)
     {
-        dd($request);
+       $data = $request->all();
+       $comic = new Comic();
+       $comic->title = $data['title'];
+
+       $comic->save();
+
     }
 
 
